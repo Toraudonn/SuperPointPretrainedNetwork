@@ -58,7 +58,7 @@ You should see the following output from the ICL-NUIM sequence snippet:
 ### Run the demo on provided .mp4 file in GPU-mode:
 
 ```sh
-./demo_superpoint.py assets/nyu_snippet.mp4 --cuda
+python main.py assets/nyu_snippet.mp4 --cuda
 ```
 You should see the following output from the NYU sequence snippet:  
 
@@ -67,12 +67,12 @@ You should see the following output from the NYU sequence snippet:
 ### Run a live demo via webcam (id #1) in CPU-mode:
 
 ```sh
-./demo_superpoint.py camera --camid=1
+python main.py camera --camid=1
 ```
 
 ### Run the demo on a remote GPU (no display) on 640x480 images and write the output to `myoutput/`
 ```sh
-./demo_superpoint.py assets/icl_snippet/ --W=640 --H=480 --no_display --write --write_dir=myoutput/
+python main.py assets/icl_snippet/ --W=640 --H=480 --no_display --write --write_dir=myoutput/
 ```
 
 ### Additional useful command line parameters
